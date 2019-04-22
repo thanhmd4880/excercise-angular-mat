@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="header">
+    <h1>{{ periodicElement?.name }}</h1>
+  </div>
+  <mat-divider></mat-divider>
+  <form class="form">
+    <mat-form-field class="example-full-width">
+      <input type="text" matInput placeholder="Name" value="{{ periodicElement?.name  }}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input type="number" matInput placeholder="Weight" value="{{ periodicElement?.weight  }}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input type="number" matInput placeholder="Priority" value="{{ periodicElement?.priority  }}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input type="text" matInput placeholder="Symbol" value="{{ periodicElement?.symbol  }}">
+    </mat-form-field>
+
+
+    <mat-form-field class="example-full-width">
+      <textarea  matInput placeholder="Note"></textarea>
+    </mat-form-field>
+  </form>
+
+</div>

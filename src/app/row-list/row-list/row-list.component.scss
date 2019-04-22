@@ -1,0 +1,130 @@
+table {
+  width: 100%;
+}
+
+.border-r {
+//border-right: 1px solid lightblue;
+}
+
+tr.mat-header-row .mat-header-cell:nth-child(1) {
+  min-width: 80px;
+  max-width: 80px;
+  width: 80px;
+}
+tr.mat-row .mat-cell:nth-child(1) {
+  min-width: 80px;
+  max-width: 80px;
+  width: 80px;
+}
+
+tr.mat-header-row .mat-header-cell:nth-child(2) {
+  min-width: 80px;
+  max-width: 80px;
+  width: 80px;
+}
+tr.mat-row .mat-cell:nth-child(2) {
+  min-width: 80px;
+  max-width: 80px;
+  width: 80px;
+}
+
+tr.mat-header-row .mat-header-cell:nth-child(3) {
+  min-width: 60px;
+  max-width: 300px;
+  width: 300px;
+  border-right: 1px solid #ccc;
+  //margin-right: 10px;
+}
+tr.mat-row .mat-cell:nth-child(3) {
+  min-width: 60px;
+  max-width: 300px;
+  width: 300px;
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid #ccc;
+  //margin-right: 10px;
+}
+
+// column 4
+tr.mat-header-row .mat-header-cell:nth-child(4) {
+  padding-left: 20px;
+}
+tr.mat-row .mat-cell:nth-child(4) {
+  padding-left: 20px;
+}
+
+
+a.detail-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.detail-link:hover {
+  color: darkblue;
+}
+
+tr th.mat-header-cell  {
+  font-size: 14px;
+  font-weight: bold;
+}
+//
+//.mat-sort-header-arrow {
+//    color: blue;
+//    background: blue;
+//}
+//
+//.mat-sort-header-stem {
+//    background: none;
+//    display: none!important;
+//}
+//
+//.mat-sort-header-pointer-middle{
+//    background: none;
+//    display: none!important;
+//}
+//
+//.mat-sort-header-indicator{
+//    top: 5px!important;
+//}
+div.mat-sort-header-arrow {
+    opacity: 0 !important;
+    display: none;
+}
+
+th.mat-header-cell {
+    mat-icon.sort_icon {
+        color: #00f;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2px !important;
+        opacity: 0;
+    }
+}
+
+
+th.mat-header-cell[aria-sort="descending"] {
+    color: #0475d0;
+    mat-icon.sort_icon {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+th.mat-header-cell[aria-sort="ascending"] {
+    color: #0475d0;
+    mat-icon.sort_icon {
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+}
+tr.highlight{
+    background: #0475D0; /* green */
+}
+
+tr.highlight td{
+    color: white;
+}
