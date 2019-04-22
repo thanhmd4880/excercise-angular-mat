@@ -6,6 +6,16 @@ table {
 //border-right: 1px solid lightblue;
 }
 
+tr.mat-header-row .mat-header-cell {
+    color: #000;
+    padding: 0 10px;
+}
+
+tr.mat-row .mat-cell {
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0 10px;
+}
+
 tr.mat-header-row .mat-header-cell:nth-child(1) {
   min-width: 80px;
   max-width: 80px;
@@ -69,26 +79,13 @@ a.detail-link:hover {
 tr th.mat-header-cell  {
   font-size: 14px;
   font-weight: bold;
+    color: #585757;
 }
-//
-//.mat-sort-header-arrow {
-//    color: blue;
-//    background: blue;
-//}
-//
-//.mat-sort-header-stem {
-//    background: none;
-//    display: none!important;
-//}
-//
-//.mat-sort-header-pointer-middle{
-//    background: none;
-//    display: none!important;
-//}
-//
-//.mat-sort-header-indicator{
-//    top: 5px!important;
-//}
+
+tr th.mat-header-cell:hover  {
+    background: #F1F1F1;
+}
+
 div.mat-sort-header-arrow {
     opacity: 0 !important;
     display: none;
@@ -125,6 +122,14 @@ tr.highlight{
     background: #0475D0; /* green */
 }
 
-tr.highlight td{
-    color: white;
+tr.highlight td {
+    color: #fff !important;
+}
+
+::ng-deep .mat-sort-header-arrow[style] {  //why using ::ng-deep here ?
+    display: none !important;
+}
+
+.mat-row-hover:hover:not(.highlight) {
+    background: #F1F1F1;
 }

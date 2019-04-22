@@ -32,7 +32,14 @@ export class NavBarComponent implements OnInit {
   });
 
   this.searchInputControl.valueChanges.subscribe((change) => {
-
+      let searchItems = [];
+      // let old
+      if (change !== null && change !== undefined && change.length > 0) {
+          searchItems = this.viewedItems$.filter((item) => {
+              return item.includes(change);
+          });
+          this.viewedItems$ = searchItems;
+      }
   });
 
   this.elementService.get10LatestViewedElement().subscribe((data) => {
@@ -47,27 +54,27 @@ export class NavBarComponent implements OnInit {
         itemName: 'Dashboards'
       },
       {
-        itemIcon: 'dashboard',
+        itemIcon: 'report',
         itemName: 'Reports'
       },
       {
-        itemIcon: 'dashboard',
+        itemIcon: 'record_voice_over',
         itemName: 'Recordings'
       },
       {
-        itemIcon: 'dashboard',
+        itemIcon: 'score',
         itemName: 'Agent Scorecards'
       },
       {
-        itemIcon: 'dashboard',
+        itemIcon: 'account_circle',
         itemName: 'Users'
       },
       {
-        itemIcon: 'dashboard',
+        itemIcon: 'group',
         itemName: 'Teams'
       },
       {
-        itemIcon: 'dashboard',
+        itemIcon: 'pan_tool',
         itemName: 'Skills'
       }
     ];
