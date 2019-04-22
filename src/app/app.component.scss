@@ -1,0 +1,111 @@
+.ngrx-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+
+.mat-slidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  background: #2D323E;
+  color: #fff;
+}
+
+.toolbar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.toolbar-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.org-button {
+  font-size: 18px;
+}
+
+.item {
+  padding: auto 20px;
+}
+
+.item mat-icon {
+  font-size: 20px;
+  margin-right: 16px;
+}
+
+.group-items .item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.item .item-name {
+  font-size: 13px;
+  line-height: 18.2px;
+  user-select: none;
+  white-space: nowrap;
+  text-size-adjust: 100%;
+
+}
+.item .item-name:hover {
+  background: #2D323E;
+}
+.group-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  line-height: 16.072px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.5);
+  height: 48px;
+  margin: 0 auto;
+}
+.group-title.hint-text {
+
+}
+.group-items {
+  margin: 0 20px;
+}
+
+.navbar-group {
+  margin: 20px auto;
+  border-top: 1px solid #444a5a;
+  margin-top: 8px;
+}
+
+.navbar-content {
+  padding: 20px auto;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background: #2D323E;
+  justify-content: center;
+  height: 60px;
+  padding: auto 16px;
+}
+
+.navbar-header .org-button {
+
+}
+.navbar-header .toggle-button-navbar {
+  justify-self: flex-end;
+}
