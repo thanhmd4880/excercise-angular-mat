@@ -15,17 +15,19 @@ import {
     MatToolbarModule,
     MatSortModule, MatListModule
 } from '@angular/material';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import {MatDividerModule} from '@angular/material/divider';
 import { StoreModule } from '@ngrx/store';
 // import { reducers, metaReducers } from './reducers';
 import { viewedItemReducer } from './reducers/viewed-item.reducer';
+import { ToolBarComponent } from './tool-bar/tool-bar.component';
+import { SlideNavComponent } from './slide-nav/slide-nav.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
+    ToolBarComponent,
+    SlideNavComponent,
   ],
     imports: [
         BrowserModule,

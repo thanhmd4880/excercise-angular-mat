@@ -1,5 +1,6 @@
 table {
   width: 100%;
+    padding: 0 20px;
 }
 
 .border-r {
@@ -7,7 +8,8 @@ table {
 }
 
 tr.mat-header-row .mat-header-cell {
-    color: #000;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 700;
     padding: 0 10px;
 }
 
@@ -103,16 +105,13 @@ th.mat-header-cell {
     }
 }
 
-
 th.mat-header-cell[aria-sort="descending"] {
-    color: #0475d0;
     mat-icon.sort_icon {
         opacity: 1;
         transform: rotate(0deg);
     }
 }
 th.mat-header-cell[aria-sort="ascending"] {
-    color: #0475d0;
     mat-icon.sort_icon {
         opacity: 1;
         transform: rotate(180deg);

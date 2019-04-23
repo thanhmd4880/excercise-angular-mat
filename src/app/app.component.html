@@ -1,1 +1,20 @@
-<app-nav-bar></app-nav-bar>
+<div class="container">
+    <mat-sidenav-container class="ngrx-container" autosize>
+        <mat-sidenav #slidenav mode="side" opened class="mat-sidenav">
+            <app-slide-nav (slideNav)="slidenav"></app-slide-nav>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div id="app-main-content">
+                <div id="wrapper">
+                    <app-tool-bar></app-tool-bar>
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
+
+
+
+
+

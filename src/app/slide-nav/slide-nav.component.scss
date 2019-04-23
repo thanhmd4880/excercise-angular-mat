@@ -1,0 +1,65 @@
+.ngrx-container {
+    background: #eee;
+}
+
+.navbar-content {
+    padding: 20px auto;
+    background: #2D323E;
+    border-top: 2px solid #444a5a;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: #383C48;
+    justify-content: center;
+    height: 60px;
+    padding: auto auto;
+    color: #fff;
+}
+
+.navbar-header .toggle-button-navbar {
+    justify-self: flex-end;
+}
+
+.org-button {
+    font-size: 18px;
+}
+
+.menu-header-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.group-items .item {
+    color: #fff;
+}
+.group-items.item:hover {
+    background: #ccc;
+}
+
+.group-items.item mat-icon {
+    font-size: 20px;
+}
+
+.group-items .item a {
+    //display: flex;
+    //align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.spaced {
+    padding-right: 16px;
+}
+.group-items .item .item-name {
+    font-size: 13px;
+    line-height: 18.2px;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.group-items .item .item-name:hover {
+    background: #2D323E;
+}

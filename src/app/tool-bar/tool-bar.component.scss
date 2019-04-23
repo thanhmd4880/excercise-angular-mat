@@ -1,0 +1,168 @@
+.toolbar-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.toolbar-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mat-toolbar {
+    background: #3085D8;
+    padding: 0;
+    mat-icon {
+        color: #fff;
+        margin: 0 10px;
+        font-size: 24px;
+    }
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    user-select: none;
+
+    .form {
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        background: dodgerblue;
+        align-items: center;
+        height: 35px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        border-radius: 5px;
+
+        .search-input {
+            display: flex;
+            align-items: center;
+
+            input {
+                background: dodgerblue;
+                border: none;
+                outline: none;
+                width: 100%;
+                color: #fff;
+
+            }
+        }
+
+        .search-info {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: auto;
+            background: #fff;
+            font-size: 14px;
+            font-family: inherit;
+            color: #000;
+            z-index: 999;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            //padding: 0 8px;
+            padding: 8px 0;
+
+            .search-section {
+                font-size: 12px;
+                font-weight: 700;
+                font-family: inherit;
+                margin-left: 30px;
+                color: #888;
+            }
+
+            mat-icon.icon-search {
+                font-size: 32px;
+                color: #444a5a;
+                //margin-left: 30px;
+            }
+
+            mat-icon {
+                font-size: 24px;
+                color: #444a5a;
+                margin-right: 20px;
+            }
+
+            mat-divider {
+                margin-top: 6px;
+            }
+
+            hr {
+                width: 100%;
+                border: 0.2px solid #ccc;
+            }
+
+            .search-items, .viewed-items {
+                .item {
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    //padding: 6px 8px;
+                    //color: #fff;
+                    .item-info {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-content: center;
+
+                        span:first-child {
+                            display: inline-block;
+                            font-size: 12px;
+                            color: #000;
+                            //background: blue;
+                            font-weight: 500;
+                        }
+
+                        span {
+                            display: inline-block;
+                            font-size: 12px;
+                            color: #000;
+                            //background: red;
+
+                            a {
+                                text-decoration: none;
+                                color: inherit;
+                            }
+
+                            a:hover {
+                                color: #2D323E;
+                            }
+                        }
+                    }
+                }
+
+                .item:hover {
+                    background: #999;
+                }
+            }
+
+            .search-input {
+                display: flex;
+                align-items: center;
+                //padding: 8px 0;
+                mat-icon {
+                    font-size: 24px;
+                }
+
+                input {
+                    background: #fff;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    color: #000;
+
+                }
+            }
+        }
+
+    }
+}

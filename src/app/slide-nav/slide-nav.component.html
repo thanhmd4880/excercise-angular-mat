@@ -1,0 +1,22 @@
+<div class="navbar-vertical">
+    <div class="navbar-header">
+        <div class="org-button">
+            <a *ngIf="opened" class="menu-header-link" [routerLink]="['/']">Platform28</a>
+            <mat-icon *ngIf="!opened" (click)="toggleSidebarFolded()">menu</mat-icon>
+        </div>
+        <button *ngIf="opened" mat-icon-button class="toggle-button-navbar" (click)="toggleSidebarFolded()">
+            <mat-icon>clear</mat-icon>
+        </button>
+    </div>
+    <div class="navbar-content">
+        <div class="navbar-group">
+            <mat-nav-list class="group-items">
+                <mat-list-item class="item" *ngFor="let item of menuItems">
+                    <mat-icon>{{item.itemIcon}}</mat-icon>
+                    <div *ngIf="opened" class="spaced"></div>
+                    <a [routerLink]="['/list']"><span *ngIf="opened" class="item-name">{{item.itemName}}</span></a>
+                </mat-list-item>
+            </mat-nav-list>
+        </div>
+    </div>
+</div>
